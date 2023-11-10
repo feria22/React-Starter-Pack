@@ -1,0 +1,33 @@
+@import "../../assets/styles/variables.scss";
+
+$headerHeight: 50px;
+
+.header {
+  height: $headerHeight;
+  background-color: $colorPrimary;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .right {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        padding: 0 10px;
+        color: $colorBlack;
+        &:hover {
+          color: $colorWhite;
+      }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      line-height: $headerHeight;
+    }
+  }
+}
